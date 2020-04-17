@@ -8,7 +8,11 @@ sudo: required
 notifications:
   email:
     recipients:
+<<<<<<< HEAD
       - mark.lee@ncs.com.sg
+=======
+      - bunnyppl@gmail.com
+>>>>>>> 9e3f9758fae5984c684725b5ab2d5633da37e52e
     on_success: always
     on_failure: always
 branches:
@@ -18,13 +22,21 @@ before_script:
   - npm install -g @angular/cli
   - npm install -g now
 script:
+<<<<<<< HEAD
   - ng build --prod --base-href https://github.com/markleencs/bitcoin-order-app
+=======
+  - ng build --prod --base-href https://kenken64.github.io/bitcoin-order-app/
+
+>>>>>>> 9e3f9758fae5984c684725b5ab2d5633da37e52e
   
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist/bitcoin
+<<<<<<< HEAD
   edge: true
+=======
+>>>>>>> 9e3f9758fae5984c684725b5ab2d5633da37e52e
   on:
     branch: development
